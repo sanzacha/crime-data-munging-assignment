@@ -14,7 +14,7 @@ var svg = d3.select("body")
 
 let dataPush = [];
 
-d3.json("assets/add-sample-data.json", function(getData) {
+d3.json("assets/add-sample-data.json", (getData) => {
   const obj = getData;
   Object.keys(obj).forEach(function(key, index) {
     let formData = {
